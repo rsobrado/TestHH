@@ -1,0 +1,17 @@
+@import '../scss/variables';
+
+.ContentHero{
+    background: $color-primary-green;
+    min-height: 350px;
+    height: 100%;
+    padding: 100px 0;
+    em{
+        font-size: 28px;
+        font-style: normal;
+    }
+    p{
+        color: white;
+        font-size: 20px;
+        line-height: 1;
+    }
+}
