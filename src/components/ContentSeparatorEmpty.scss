@@ -1,0 +1,21 @@
+@import '../scss/variables';
+
+.ContentSeparatorEmpty{
+
+    background: url('../images/separator.jpg');
+    background-size: cover;
+    min-height: 350px;
+    height: 100%;
+    padding:  0;
+    background-repeat: no-repeat;
+    h1{
+        font-size: 68px;
+        color: #fff;
+    }
+    .flex{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
