@@ -1,0 +1,24 @@
+@import '../scss/variables';
+
+.ContentSeparator{
+
+    background: url('/src/images/savings-separator.jpg') $color-primary;
+    background-size: cover;
+    min-height: 350px;
+    height: 100%;
+    padding:  0;
+    h1{
+        font-size: 68px;
+        color: #fff;
+    }
+    .flex{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    svg{
+        max-width: 200px;
+    }
+
+}
