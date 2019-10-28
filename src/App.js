@@ -4,6 +4,7 @@ import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import ContentHero from './components/ContentHero';
 import ContentSeparator from './components/ContentSeparator';
+import ContentSeparatorEmpty from './components/ContentSeparatorEmpty';
 import SliderComponent from './components/SliderComponent';
 import './App.scss';
 
@@ -22,6 +23,7 @@ const App = () => {
         cta='Phasellus consequat rutrum ante eget aliquam.'>
       </ContentHero>
       <ContentSeparator></ContentSeparator>
+      <ContentSeparatorEmpty></ContentSeparatorEmpty>
       <Footer></Footer>
     </div>
   );

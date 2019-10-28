@@ -2,11 +2,13 @@
 
 .ContentSeparator{
 
-    background: url('/src/images/savings-separator.jpg') $color-primary;
+    background: url('../images/savings-separator.jpg') #6cba48;
     background-size: cover;
     min-height: 350px;
     height: 100%;
     padding:  0;
+    background-repeat: no-repeat;
+    background-position-x: -100px;
     h1{
         font-size: 68px;
         color: #fff;
@@ -17,8 +19,4 @@
         align-items: center;
         justify-content: space-between;
     }
-    svg{
-        max-width: 200px;
-    }
-
 }

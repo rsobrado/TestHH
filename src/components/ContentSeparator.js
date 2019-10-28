@@ -11,7 +11,6 @@ import {
 
 
 const ContentSeparator = (props) => {
-  // const isLoggedIn = props.customClass;
 
   return (
     
