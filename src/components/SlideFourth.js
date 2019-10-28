@@ -39,14 +39,20 @@ const SlideFourth  = () => {
               <div className="hero-item">
                 <h3>Sed vestibulum odiosem, sit ametr</h3>
                 <p>Fusce non sodales odio, sit amet dignissim ipsum. Pellentesque eleifend felis augue.</p>
-                <p> 
-                  
+                <p className="small"> 
+                Sed vitae eros iaculis felis maximus ornare vel egestas tortor. Etiam non rhoncus est, eget fringilla lacus.:
                 </p>
+                 <ul className="small">
+                   <li><NavLink href="#">Ac, bibendum dui</NavLink></li>
+                   <li><NavLink href="#">Proin et ultrices turpis Maecenas ultrices</NavLink></li>
+                   <li><NavLink href="#">Maecenas ique lacinia.</NavLink></li>
+                   <li>Pellentesque ut sem    vel metus ornare.</li>
+                 </ul>
               </div>
               <div className="hero-item">
                 <h3>Nullam ac convallis diam, eu prellfua</h3>
-                <p>Vel metus ornare aliquam vel ut neque. Suspendisse ac ipsum nec ipsum ultricies porta. Praesent ut ornare lacus.  Pellentesque non tortor vel erat feugiat.</p>
-                <p className="small">Vivamus vitae urna nisi. Suspendisse ex nunc, ornare eget consectetur sit amet eget consectetur sit amet.</p>
+                <p>Vivamus vitae urna nisi. Suspendisse ex nunc, ornare eget consectetur sit amet eget consectetur sit amet.</p>
+                <p className="small">Phasellus ultrices elit in est imperdiet scelerisque. Aliquam sollicitudin vulputate justo at luctus.</p>
                 <em className="">Fusce in efficitur <NavLink href="tel:555-555-5555">555-555-5555</NavLink> Curabitur viverra, molestie tincidunt.</em>
               </div>
             </div>

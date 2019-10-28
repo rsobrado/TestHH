@@ -20,7 +20,6 @@ const App = () => {
         content='Duis vestibulum ultricies leo, nec dapibus ligula luctus ut. In dapibus dui ac erat lobortis pulvinar. Fusce a arcu tempor, feugiat odio et, varius enim.'
         cta='Phasellus consequat rutrum ante eget aliquam.'>
       </ContentHero>
-      <ContentHero customClass="separator"></ContentHero>
       <Footer></Footer>
     </div>
   );
