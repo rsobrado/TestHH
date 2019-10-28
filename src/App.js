@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import ContentHero from './components/ContentHero';
-import Slider from './components/Slider';
 import SliderComponent from './components/SliderComponent';
 import './App.scss';
 
@@ -21,9 +20,7 @@ const App = () => {
         content='Duis vestibulum ultricies leo, nec dapibus ligula luctus ut. In dapibus dui ac erat lobortis pulvinar. Fusce a arcu tempor, feugiat odio et, varius enim.'
         cta='Phasellus consequat rutrum ante eget aliquam.'>
       </ContentHero>
-      
-      
-      <ContentHero></ContentHero>
+      <ContentHero customClass="separator"></ContentHero>
       <Footer></Footer>
     </div>
   );

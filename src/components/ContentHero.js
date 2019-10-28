@@ -9,7 +9,12 @@ import {
 
 
 const ContentHero = (props) => {
+  const isLoggedIn = props.customClass;
+
   return (
+    
+
+    // <div className={"ContentHero" + props.customClass}>
     <div className="ContentHero">
         <Container>
           <p><em>{props.title+','}</em> {props.intro}</p>

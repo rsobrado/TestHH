@@ -10,7 +10,6 @@ import SecondSlide from './SlideSecond';
 import ThirdSlide from './SlideThird';
 import FourthSlide from './SlideFourth';
 
-const styles = { height: "calc(100vh)", width: "100%" };
 const SliderComponent  = (props) => {
     const [autoplay, setAutoplay] = useState(true);
     // const slider_ref = useRef(null);
@@ -25,19 +24,19 @@ const SliderComponent  = (props) => {
             autoplay={autoplay}
             pauseOnVisibility={true}
             onSelect={_visiableOnSelect}
-            slideshowSpeed={4000}
+            slideshowSpeed={4500}
             version={4}
           >
-          <div style={{ ...styles, backgroundColor: "#e3e3e3" }}>
+          <div className="slider-container">
             <FirstSlide></FirstSlide>
           </div>
-          <div style={{ ...styles, backgroundColor: "#e3e3e3" }}>
+          <div className="slider-container">
             <SecondSlide></SecondSlide>
           </div>
-            <div style={{ ...styles, backgroundColor: "#e3e3e3" }}>
+            <div className="slider-container">
                 <ThirdSlide></ThirdSlide>
             </div>
-            <div style={{ ...styles, backgroundColor: "#e3e3e3" }}>
+            <div className="slider-container">
                 <FourthSlide></FourthSlide>
             </div>
           </RBCarousel>

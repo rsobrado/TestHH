@@ -1,7 +1,7 @@
 @import '../scss/variables';
 
 .ContentHero{
-    background: $color-primary-green;
+    background: $color-primary;
     min-height: 350px;
     height: 100%;
     padding: 100px 0;
@@ -13,5 +13,9 @@
         color: white;
         font-size: 20px;
         line-height: 1;
+    }
+    &.separator{
+        background: url('/src/images/separator.png');
+        background-size: cover;
     }
 }

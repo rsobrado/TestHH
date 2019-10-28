@@ -1,15 +1,193 @@
+@import '../scss/variables';
+
 .carousel {
-    height: calc(100vh);
+    min-height: calc(100vh);
+    height: auto;
     width: 100%;
+    overflow: scroll;
+    position: relative;
+    h2{
+        font-size: 50px;
+        .bold{
+            font-weight: bold;
+        }
+    }
     .left,
     .right{
         display: none;
     }
     .carousel-indicators{
-        right: calc(7%);
+        right: calc(-10%);
         bottom: calc(50% - 100px);
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        align-items: flex-end;
+        
+        .active{
+            background-color: $color-primary;
+            color: $color-primary;
+            li{
+                &:nth-child(3)::after{
+                    color: $color-primary;
+                }
+            }
+        }
         li{
             margin-top: 10px;
+            width: 10px;
+            height: 10px;
+            &:hover{
+                background-color: $color-primary;
+            }
+            &:nth-child(3) {
+                background: transparent;
+                font-size: 12px;
+                position: relative;
+                &::after {
+                    color: inherit;
+                    font-weight: bold;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    content: "₡";
+                    text-align: right;
+                }
+            }
         }
     }
+    .slider{
+        &-cont{
+            &ainer{ 
+                min-height: calc(100vh);
+                width: 100% ;
+                padding-top: 100px;
+            }
+            &ent{
+                padding: 30px;
+            }
+        }
+    }
+    .hero-slider {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+        padding: 20px 30px;
+        &.two-cols{
+            grid-gap: 5px;
+        }
+        
+        &.shaded{
+            background: $color-gray-primary;
+        }
+        .hero-item{
+            &.has-child{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 2px;
+                &:nth-child(2){
+                    .hero-item-child{
+                        p{
+                            background: rgba($color-green-dark,0.4);
+                        }
+                    }
+                }
+                &:nth-child(3){
+                    .hero-item-child{
+                        p{
+                            background: rgba($color-green-yellow,0.4);
+                        }
+                    }
+                }
+            }
+            h3{
+                color: $color-primary;
+                padding-bottom: 10px;
+                border-bottom: 10px solid ;
+                margin-bottom: 0;
+            }
+            &:nth-child(2){
+                h3{
+                    color: $color-green-dark;
+                }
+            }
+            &:nth-child(3){
+                h3{
+                    color: $color-green-yellow;
+                }
+            }
+            .hero-item-child{
+
+                h3{
+                    text-align: center;
+                    font-size: 32px;
+                }
+                p{
+                    background: rgba($color-primary,0.4);
+                    padding: 10px;
+                    text-align: center;
+                    height: 64px;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    em{
+        display: block;
+        font-style: normal;
+        color: $color-green-dark;
+        a{
+            color: $color-green-yellow;
+        }
+    }
+    .disclaimer{
+        font-size: 10px;
+    }
+    .magnified{
+        font-size: 80px;
+        font-weight: bolder;
+        max-width: 750px;
+    }
+    .cta-arrow{
+        font-size: 14px;
+        position: relative;
+        bottom: 150px;
+        left: 15%;
+        width: fit-content;
+        &::after,
+        &::before{
+            content: "";
+            position: absolute;
+            width: 35px;
+            height: 1px;
+            background-color: black;
+            left: 15%;
+            bottom: -15px;
+            transform: rotate(25deg);
+
+        }
+        &::before{
+            transform: rotate(-25deg);
+            left: calc(15% + 30px);
+
+        }
+    }
+
+    @keyframes bounce { 
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-50px); }
+      }
+
+  .bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    animation: bounce 1.88s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+  .cta-bounce{
+      position: absolute;
+      bottom: 0px;
+      left: 13%;
+  }
 }
