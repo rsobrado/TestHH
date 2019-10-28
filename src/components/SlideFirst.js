@@ -1,10 +1,12 @@
 import React from 'react';
 import { Row, Col } from "./bootstrap-component.jsx";
 import { Container, Button} from 'reactstrap';
+import ContentHero from '../components/ContentHero';
   
 const SlideFirst  = () => {
     
   return (
+    <div>
     <div className="SlideFirst">
         <Container>
           <Row>
@@ -20,6 +22,13 @@ const SlideFirst  = () => {
             </div>
         </Container>
     </div>
+        <ContentHero 
+        title='Lorem Ipsum' 
+        intro='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere odio orci.'
+        content='Duis vestibulum ultricies leo, nec dapibus ligula luctus ut. In dapibus dui ac erat lobortis pulvinar. Fusce a arcu tempor, feugiat odio et, varius enim.'
+        cta='Phasellus consequat rutrum ante eget aliquam.'>
+      </ContentHero>
+      </div>
   );
 }
 

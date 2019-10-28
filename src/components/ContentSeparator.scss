@@ -9,14 +9,21 @@
     padding:  0;
     background-repeat: no-repeat;
     background-position-x: -100px;
+    margin-top: 150px;
     h1{
-        font-size: 68px;
         color: #fff;
+        @media screen and (min-width: 575px) {
+            font-size: 68px;
+        }
     }
     .flex{
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+        flex-direction: column;
+
+        @media screen and (min-width: 575px) {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
     }
 }

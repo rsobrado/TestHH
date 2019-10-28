@@ -1,5 +1,8 @@
 @import '../scss/variables';
-
+.SlideFirst{
+    min-height: calc(100vh);
+    position: relative;
+}
 .carousel {
     min-height: calc(100vh);
     height: auto;
@@ -24,7 +27,7 @@
     }
     .carousel-indicators{
         right: calc(-10%);
-        bottom: calc(50% - 100px);
+        bottom: calc(70% - 100px);
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -78,9 +81,13 @@
     }
     .hero-slider {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
         grid-gap: 40px;
         padding: 20px 30px;
+        grid-template-columns: repeat(1, 1fr);
+
+        @media screen and (min-width: 575px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
         &.two-cols{
             grid-gap: 5px;
             padding: 20px 15px;
@@ -107,8 +114,8 @@
         .hero-item{
             &.has-child{
                 display: grid;
-                grid-template-columns: repeat(2, 1fr);
                 grid-gap: 2px;
+                grid-template-columns: repeat(2, 1fr);
                 &:nth-child(2){
                     .hero-item-child{
                         p{
@@ -175,7 +182,7 @@
     .cta-arrow{
         font-size: 14px;
         position: relative;
-        bottom: 150px;
+        bottom: 250px;
         left: 15%;
         width: fit-content;
         &::after,

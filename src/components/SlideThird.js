@@ -1,6 +1,7 @@
 import React from 'react';
 import { Row, Col } from "./bootstrap-component.jsx";
 import { Container, Button, ButtonGroup, NavLink} from 'reactstrap';
+import ContentSeparatorEmpty from '../components/ContentSeparatorEmpty';
 
 
 const SlideThird  = () => {
@@ -65,6 +66,7 @@ const SlideThird  = () => {
             </div>
           </Row>
         </Container>
+        <ContentSeparatorEmpty></ContentSeparatorEmpty>
     </div>
   );
 }

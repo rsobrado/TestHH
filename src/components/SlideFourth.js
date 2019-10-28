@@ -1,5 +1,5 @@
 import React from 'react';
-
+import ContentSeparator from '../components/ContentSeparator';
 import { Row, Col, Button } from "./bootstrap-component.jsx";
 
 
@@ -61,6 +61,7 @@ const SlideFourth  = () => {
 
 
         </Container>
+        <ContentSeparator></ContentSeparator>
     </div>
   );
 }
