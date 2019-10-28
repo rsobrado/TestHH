@@ -27,6 +27,8 @@
         .active{
             background-color: $color-primary;
             color: $color-primary;
+            margin-right: 1px;
+            padding: 2px;
             li{
                 &:nth-child(3)::after{
                     color: $color-primary;
@@ -86,6 +88,13 @@
                 .hero-item{
                     padding: 20px 30px;
                     background: $color-gray-primary;
+                    h3{
+                        margin-bottom: 20px;
+                    }
+                    .btn{
+                        margin-top: 20px;
+                        font-size: 24px;
+                    }
                 }
             }
         }
