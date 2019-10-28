@@ -1,6 +1,6 @@
 
 
-import React, { useState, useCallback, useRef } from "react";
+import React, {useCallback} from "react";
 
 import RBCarousel from "react-bootstrap-carousel";
 import './SliderComponent.scss';
@@ -11,7 +11,7 @@ import ThirdSlide from './SlideThird';
 import FourthSlide from './SlideFourth';
 
 const SliderComponent  = (props) => {
-    const [autoplay, setAutoplay] = useState(true);
+    // const [autoplay, setAutoplay] = useState(true);
     // const slider_ref = useRef(null);
     // const _autoplay = useCallback(() => setAutoplay(autoplay => !autoplay), []);
     const _visiableOnSelect = useCallback(active => {}, []);
@@ -21,7 +21,7 @@ const SliderComponent  = (props) => {
   return (
     <div >
           <RBCarousel
-            autoplay={autoplay}
+            autoplay={true}
             pauseOnVisibility={true}
             onSelect={_visiableOnSelect}
             slideshowSpeed={4500}

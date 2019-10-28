@@ -9,7 +9,7 @@ import {
 
 
 const ContentHero = (props) => {
-  const isLoggedIn = props.customClass;
+  // const isLoggedIn = props.customClass;
 
   return (
     

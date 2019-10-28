@@ -18,7 +18,7 @@ const SlideThird  = () => {
           </Row>
           <Row >
             <Col span={12}>
-            <div className="hero-slider two-col">
+            <div className="hero-slider two-cols">
               <div className="hero-item has-child">
                 <div className="hero-item-child">
                   <h3>₡2,500</h3>

@@ -48,8 +48,8 @@
                     color: inherit;
                     font-weight: bold;
                     position: absolute;
-                    top: 0;
-                    right: 0;
+                    top: -3px;
+                    right: 1px;
                     content: "₡";
                     text-align: right;
                 }
@@ -75,10 +75,19 @@
         padding: 20px 30px;
         &.two-cols{
             grid-gap: 5px;
+            padding: 20px 15px;
         }
         
         &.shaded{
             background: $color-gray-primary;
+            &-items{
+                grid-gap: 10px;
+                padding: 0;
+                .hero-item{
+                    padding: 20px 30px;
+                    background: $color-gray-primary;
+                }
+            }
         }
         .hero-item{
             &.has-child{
