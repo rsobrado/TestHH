@@ -26,7 +26,6 @@ const Navigation = (props) => {
           <Navbar  expand="md">
             <NavbarBrand href="/">
             <Logo />
-            <img src={Logo} alt="" />
             </NavbarBrand>
             <NavbarToggler onClick={toggle} />
             <Collapse isOpen={isOpen} navbar>
